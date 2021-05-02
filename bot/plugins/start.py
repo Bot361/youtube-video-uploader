@@ -19,10 +19,6 @@ async def _start(c, m):
         text=tr.START_MSG.format(m.from_user.first_name),
         quote=True,
         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('Join Project Channel!', url='https://t.me/odbots')
-                ]
-            ]
+          
         )
     )
