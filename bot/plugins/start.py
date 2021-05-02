@@ -1,3 +1,4 @@
+  
 from pyrogram import filters as Filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -19,6 +20,10 @@ async def _start(c, m):
         text=tr.START_MSG.format(m.from_user.first_name),
         quote=True,
         reply_markup=InlineKeyboardMarkup(
-          
+            [
+                [
+                    InlineKeyboardButton('Join This Group!', url='https://t.me/Musicwold20210')
+                ]
+            ]
         )
     )
